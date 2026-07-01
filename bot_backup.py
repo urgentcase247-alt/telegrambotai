@@ -77,4 +77,4 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, chat))
 
 print("Bot is running with Groq...")
-app.run_polling(drop_pending_updates=True)
+app.run_polling()
